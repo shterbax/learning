@@ -8,7 +8,6 @@ if len(li) % 2 != 0:
     if first > 1:
         second += 1
 
-a = li[0:first]
-b = li[second:]
-print(a)
-print(b)
+
+print(li[0:first])
+print(li[second:])

@@ -1,17 +1,18 @@
 a = int(input())
 b = int(input())
+op = input()
 
-# +
-print(a + b)
-
-# -
-print(a - b)
-
-# *
-print(a * b)
-
-# /
-if b != 0:
-    print(a / b)
+if op == '+':
+    print(a + b)
+elif op == '-':
+    print(a - b)
+elif op == '*':
+    print(a * b)
 else:
-    print('na 0 ne delem')
+    if b != 0:
+        print(a / b)
+    else:
+        print('na 0 ne delem')
+
+
+
