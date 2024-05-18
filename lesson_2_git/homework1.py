@@ -8,9 +8,15 @@
 #li_1 = li[::-1]
 #print(li_1)
 
+#li = [1, 5, 7, 4, 8, 9, 8]
+
+#li.insert(0, li[-1])
+#li.pop()
+
+#print(li)
+
 li = [1, 5, 7, 4, 8, 9, 8]
 
-li.insert(0, li[-1])
-li.pop()
+li.insert(0, li.pop())
 
 print(li)
