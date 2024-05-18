@@ -9,5 +9,4 @@ if len(li) % 2 != 0:
         second += 1
 
 
-print(li[0:first])
-print(li[second:])
+print([li[0:first], li[second:]])
