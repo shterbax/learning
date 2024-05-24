@@ -1,4 +1,4 @@
-from random import random
+from test_random import random
 
 li = [0, 1, 0, 12, 3]
 
