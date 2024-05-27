@@ -1,5 +1,5 @@
 import math
-
+#
 x = input('Input number:')
 x = list(str(x))
 x = [int(item) for item in x]
