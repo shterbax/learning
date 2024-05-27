@@ -1,6 +1,6 @@
 import math
-###
-x = input('Input number:')
+
+x = 423
 x = list(str(x))
 x = [int(item) for item in x]
 
