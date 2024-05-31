@@ -1,6 +1,6 @@
 import string
 
-var = 'b-H'
+var = input('Input variable:')
 a, b = var.split('-')
 result = string.ascii_letters
 

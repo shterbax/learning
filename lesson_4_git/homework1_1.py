@@ -1,17 +1,35 @@
 import keyword
-a = str(input('Variable:'))
+import string
 
-allowed_s = set('qwertyuiopasdfghjklzxcvbnm_1234567890')
 
-if set(a).issubset(allowed_s):
-    if a[0].isdigit():
-        print('False')
-    elif keyword.iskeyword(a):
-        print('False')
-    elif a.count('_') > 1 or a.count('_') < 1:
-        print('False')
-    else:
-        print('True')
-else:
-    print('False')
+def check(name):
+    cntalpha = 0
+    cntline = 0
 
+    if name[0].isdigit():
+        return False
+
+    if name in keyword.kwlist:
+        return False
+
+    for i in name:
+        if i == '_':
+            cntline += 1
+
+        if i in string.punctuation and i != '_' or i == ' ':
+            return False
+
+        if i.isalpha():
+            cntalpha += 1
+            if i.isupper(): return False
+
+    if cntalpha == 0 and cntline > 1: return False
+
+    return True
+
+
+m = 0
+while m < 15:
+    name = input('Enter new string: ')
+    print(check(name))
+    m += 1

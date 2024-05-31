@@ -9,6 +9,4 @@ for x in a:
         break
     else:
         print('#' + a[0:140])
-
-
         break
