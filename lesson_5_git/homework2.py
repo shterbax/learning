@@ -12,6 +12,7 @@ m = var // 60
 var %= 60
 
 ost = d % 10
+day = ''
 
 if d == 0 or d < 10 and 4 < ost < 11 or d > 10 and ost == 1 or d > 10 and 3 < ost < 11:
     day = 'днів'
